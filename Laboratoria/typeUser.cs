@@ -12,14 +12,18 @@ namespace Laboratoria
     using System;
     using System.Collections.Generic;
     
-    public partial class users
+    public partial class typeUser
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public typeUser()
+        {
+            this.user = new HashSet<user>();
+        }
+    
         public int id { get; set; }
-        public string firstName { get; set; }
-        public string lastName { get; set; }
-        public string login { get; set; }
-        public string password { get; set; }
-        public int type { get; set; }
-        public string photo { get; set; }
+        public string name { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<user> user { get; set; }
     }
 }

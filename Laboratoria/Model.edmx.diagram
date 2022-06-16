@@ -4,8 +4,16 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="e502b33d30dc47d8b2971841d36800fe" Name="Diagram1">
-        <EntityTypeShape EntityType="testModel.users" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+      <Diagram DiagramId="aa7f9c78fc7244c7b3dd3900653d2c6f" Name="Diagram1">
+        <EntityTypeShape EntityType="LaboratoriyaModel.order" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaboratoriyaModel.patient" Width="1.5" PointX="7.875" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaboratoriyaModel.service" Width="1.5" PointX="4.25" PointY="4.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaboratoriyaModel.typeUser" Width="1.5" PointX="0.75" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="LaboratoriyaModel.user" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
+        <AssociationConnector Association="LaboratoriyaModel.FK_order_patient" ManuallyRouted="false" />
+        <AssociationConnector Association="LaboratoriyaModel.FK_order_service" ManuallyRouted="false" />
+        <AssociationConnector Association="LaboratoriyaModel.FK_order_user" ManuallyRouted="false" />
+        <AssociationConnector Association="LaboratoriyaModel.FK_user_typeUser" ManuallyRouted="false" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

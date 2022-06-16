@@ -13,10 +13,10 @@ namespace Laboratoria
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class testEntities : DbContext
+    public partial class LaboratoriyaEntities : DbContext
     {
-        public testEntities()
-            : base("name=testEntities")
+        public LaboratoriyaEntities()
+            : base("name=LaboratoriyaEntities")
         {
         }
     
@@ -25,6 +25,10 @@ namespace Laboratoria
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<users> users { get; set; }
+        public virtual DbSet<order> order { get; set; }
+        public virtual DbSet<patient> patient { get; set; }
+        public virtual DbSet<service> service { get; set; }
+        public virtual DbSet<typeUser> typeUser { get; set; }
+        public virtual DbSet<user> user { get; set; }
     }
 }

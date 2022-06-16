@@ -1,14 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Laboratoria
 {
     internal static class Program
     {
-        public static testEntities LaboratoriaDB = new testEntities();
+        public static LaboratoriyaEntities LaboratoriaDB = new LaboratoriyaEntities();
         /// <summary>
         /// Главная точка входа для приложения.
         /// </summary>

@@ -56,6 +56,7 @@
             this.textBoxLogin.Name = "textBoxLogin";
             this.textBoxLogin.Size = new System.Drawing.Size(150, 23);
             this.textBoxLogin.TabIndex = 0;
+            this.textBoxLogin.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormAuthorization_KeyUp);
             // 
             // labelPassword
             // 
@@ -75,6 +76,7 @@
             this.textBoxPassword.Size = new System.Drawing.Size(150, 23);
             this.textBoxPassword.TabIndex = 1;
             this.textBoxPassword.UseSystemPasswordChar = true;
+            this.textBoxPassword.KeyUp += new System.Windows.Forms.KeyEventHandler(this.FormAuthorization_KeyUp);
             // 
             // pictureBoxLogo
             // 
@@ -98,6 +100,8 @@
             this.buttonLogin.Text = "Войти";
             this.buttonLogin.UseVisualStyleBackColor = false;
             this.buttonLogin.Click += new System.EventHandler(this.buttonLogin_Click);
+            this.buttonLogin.MouseLeave += new System.EventHandler(this.buttonLogin_MouseLeave);
+            this.buttonLogin.MouseMove += new System.Windows.Forms.MouseEventHandler(this.buttonLogin_MouseMove);
             // 
             // checkBoxShowPassword
             // 
