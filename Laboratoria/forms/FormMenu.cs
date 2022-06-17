@@ -12,6 +12,7 @@ namespace Laboratoria.forms
             this.backForm = backForm;
             labelHello.Text = $"Добро пожаловать, {CurrentUser.userData.surname} {CurrentUser.userData.name}";
             labelRole.Text = CurrentUser.userData.typeUser.name;
+            if (CurrentUser.userData.image != null) pictureBoxPhoto.Load($"../../assets/{CurrentUser.userData.image}");
         }
 
         private void FormMenu_FormClosed(object sender, FormClosedEventArgs e)

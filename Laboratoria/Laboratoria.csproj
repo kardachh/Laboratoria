@@ -155,6 +155,7 @@
     <Content Include="assets\laborant_2.png" />
     <Content Include="assets\logo.ico" />
     <Content Include="assets\logo.png" />
+    <Content Include="assets\admin.png" />
     <Content Include="Model.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model.edmx</DependentUpon>
