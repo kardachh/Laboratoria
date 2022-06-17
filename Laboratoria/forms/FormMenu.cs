@@ -13,6 +13,9 @@ namespace Laboratoria.forms
             labelHello.Text = $"Добро пожаловать, {CurrentUser.userData.surname} {CurrentUser.userData.name}";
             labelRole.Text = CurrentUser.userData.typeUser.name;
             if (CurrentUser.userData.image != null) pictureBoxPhoto.Load($"../../assets/{CurrentUser.userData.image}");
+            buttonServices.Visible = CurrentUser.userData.typeUser.name == "Администратор" ? true : false;
+            buttonTakeBiomaterial.Visible = CurrentUser.userData.typeUser.name == "Администратор" ? false : true;
+            buttonReports.Visible = CurrentUser.userData.typeUser.name == "Администратор" ? true : false;
         }
 
         private void FormMenu_FormClosed(object sender, FormClosedEventArgs e)
@@ -40,6 +43,11 @@ namespace Laboratoria.forms
         private void buttonLeave_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void buttonReports_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

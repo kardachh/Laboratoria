@@ -37,6 +37,7 @@
             this.buttonLeave = new System.Windows.Forms.Button();
             this.pictureBoxPhoto = new System.Windows.Forms.PictureBox();
             this.pictureBoxLogo = new System.Windows.Forms.PictureBox();
+            this.buttonReports = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPhoto)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxLogo)).BeginInit();
             this.SuspendLayout();
@@ -138,14 +139,30 @@
             this.pictureBoxLogo.TabIndex = 2;
             this.pictureBoxLogo.TabStop = false;
             // 
+            // buttonReports
+            // 
+            this.buttonReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
+            this.buttonReports.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonReports.Font = new System.Drawing.Font("Comic Sans MS", 10.25F);
+            this.buttonReports.Location = new System.Drawing.Point(16, 158);
+            this.buttonReports.Name = "buttonReports";
+            this.buttonReports.Size = new System.Drawing.Size(321, 44);
+            this.buttonReports.TabIndex = 5;
+            this.buttonReports.Text = "Отчеты";
+            this.buttonReports.UseVisualStyleBackColor = false;
+            this.buttonReports.Click += new System.EventHandler(this.buttonReports_Click);
+            this.buttonReports.MouseLeave += new System.EventHandler(this.button_MouseLeave);
+            this.buttonReports.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button_MouseMove);
+            // 
             // FormMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(349, 367);
+            this.ClientSize = new System.Drawing.Size(354, 367);
             this.Controls.Add(this.pictureBoxPhoto);
             this.Controls.Add(this.buttonLeave);
+            this.Controls.Add(this.buttonReports);
             this.Controls.Add(this.buttonServices);
             this.Controls.Add(this.buttonTakeBiomaterial);
             this.Controls.Add(this.buttonPatients);
@@ -174,5 +191,6 @@
         private System.Windows.Forms.Button buttonServices;
         private System.Windows.Forms.Button buttonLeave;
         private System.Windows.Forms.PictureBox pictureBoxPhoto;
+        private System.Windows.Forms.Button buttonReports;
     }
 }
