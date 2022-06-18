@@ -67,6 +67,9 @@
             // 
             // listViewPatients
             // 
+            this.listViewPatients.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.listViewPatients.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Id,
             this._Name,
@@ -82,7 +85,7 @@
             this.listViewPatients.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.listViewPatients.MultiSelect = false;
             this.listViewPatients.Name = "listViewPatients";
-            this.listViewPatients.Size = new System.Drawing.Size(838, 401);
+            this.listViewPatients.Size = new System.Drawing.Size(840, 402);
             this.listViewPatients.TabIndex = 0;
             this.listViewPatients.UseCompatibleStateImageBehavior = false;
             this.listViewPatients.View = System.Windows.Forms.View.Details;
@@ -118,8 +121,9 @@
             // 
             // pictureBoxLogo
             // 
+            this.pictureBoxLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxLogo.Image = global::Laboratoria.Properties.Resources.logo;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(737, 15);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(739, 15);
             this.pictureBoxLogo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(117, 108);
@@ -398,7 +402,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(862, 605);
+            this.ClientSize = new System.Drawing.Size(864, 606);
             this.Controls.Add(this.groupBoxButtons);
             this.Controls.Add(this.groupBoxFields);
             this.Controls.Add(this.pictureBoxLogo);
@@ -406,6 +410,7 @@
             this.Font = new System.Drawing.Font("Comic Sans MS", 8.25F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.MinimumSize = new System.Drawing.Size(880, 645);
             this.Name = "FormPatients";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Пациенты";

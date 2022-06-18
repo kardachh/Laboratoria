@@ -30,6 +30,11 @@ namespace Laboratoria.forms
             InitializeComponent();
             ShowPatients();
             this.backForm = backForm;
+            if (CurrentUser.userData.typeUser.name=="Администратор")
+            {
+                Utilities.DisableFields(groupBoxFields);
+                Utilities.DisableFields(groupBoxButtons);
+            }
         }
         private void FormPatients_FormClosed(object sender, FormClosedEventArgs e)
         {
@@ -38,14 +43,7 @@ namespace Laboratoria.forms
 
         private void buttonAdd_Click(object sender, System.EventArgs e)
         {
-            if (textBoxSurname.Text != "" 
-                && textBoxName.Text != "" 
-                && textBoxLogin.Text != "" 
-                && textBoxPassword.Text != ""
-                && maskedTextBoxPhone.Text != "" 
-                && maskedTextBoxPassport.Text != "" 
-                && textBoxInsurance.Text != "" 
-                && textBoxEmail.Text != "")
+            if (Utilities.CheckNonEmptyFields(groupBoxFields))
             {
                 patient _patient = new patient();
                 _patient.name = textBoxName.Text;
@@ -68,14 +66,7 @@ namespace Laboratoria.forms
         {
             if (listViewPatients.SelectedItems.Count == 1)
             {
-                if (textBoxSurname.Text != ""
-                && textBoxName.Text != ""
-                && textBoxLogin.Text != ""
-                && textBoxPassword.Text != ""
-                && maskedTextBoxPhone.Text != ""
-                && maskedTextBoxPassport.Text != ""
-                && textBoxInsurance.Text != ""
-                && textBoxEmail.Text != "")
+                if (Utilities.CheckNonEmptyFields(groupBoxFields))
                 {
                     patient _patient = listViewPatients.SelectedItems[0].Tag as patient;
                     _patient.name = textBoxName.Text;
@@ -105,7 +96,7 @@ namespace Laboratoria.forms
                     Program.LaboratoriaDB.SaveChanges();
                     ShowPatients();
                 }
-                ClearFields();
+                Utilities.ClearFields(groupBoxFields);
             }
             catch
             {
@@ -130,22 +121,8 @@ namespace Laboratoria.forms
             }
             else
             {
-                ClearFields();
+                Utilities.ClearFields(groupBoxFields);
             }
-        }
-
-        private void ClearFields()
-        {
-            textBoxEmail.Clear();
-            textBoxName.Clear();
-            textBoxSurname.Clear();
-            textBoxLogin.Clear();
-            textBoxPassword.Clear();
-            dateTimePickerBirthday.Value = DateTime.Today;
-            maskedTextBoxPassport.Clear();
-            textBoxEmail.Clear();
-            maskedTextBoxPhone.Clear();
-            textBoxInsurance.Clear();
         }
     }
 }

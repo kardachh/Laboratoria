@@ -51,6 +51,9 @@
             // 
             // textBoxLogin
             // 
+            this.textBoxLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxLogin.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxLogin.Location = new System.Drawing.Point(28, 184);
             this.textBoxLogin.Name = "textBoxLogin";
@@ -70,6 +73,9 @@
             // 
             // textBoxPassword
             // 
+            this.textBoxPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxPassword.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBoxPassword.Location = new System.Drawing.Point(28, 240);
             this.textBoxPassword.Name = "textBoxPassword";
@@ -80,6 +86,7 @@
             // 
             // pictureBoxLogo
             // 
+            this.pictureBoxLogo.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.pictureBoxLogo.Image = global::Laboratoria.Properties.Resources.logo;
             this.pictureBoxLogo.Location = new System.Drawing.Point(28, 12);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
@@ -90,6 +97,7 @@
             // 
             // buttonLogin
             // 
+            this.buttonLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
             this.buttonLogin.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonLogin.Font = new System.Drawing.Font("Comic Sans MS", 10.25F);
@@ -105,6 +113,7 @@
             // 
             // checkBoxShowPassword
             // 
+            this.checkBoxShowPassword.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.checkBoxShowPassword.AutoSize = true;
             this.checkBoxShowPassword.Font = new System.Drawing.Font("Comic Sans MS", 8.25F);
             this.checkBoxShowPassword.Location = new System.Drawing.Point(64, 269);
@@ -130,7 +139,6 @@
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labelLogin);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.MaximumSize = new System.Drawing.Size(220, 400);
             this.MinimumSize = new System.Drawing.Size(220, 400);
             this.Name = "FormAuthorization";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

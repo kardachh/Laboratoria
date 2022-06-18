@@ -64,6 +64,7 @@
             // 
             // buttonPatients
             // 
+            this.buttonPatients.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonPatients.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
             this.buttonPatients.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonPatients.Font = new System.Drawing.Font("Comic Sans MS", 10.25F);
@@ -79,6 +80,7 @@
             // 
             // buttonTakeBiomaterial
             // 
+            this.buttonTakeBiomaterial.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonTakeBiomaterial.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
             this.buttonTakeBiomaterial.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonTakeBiomaterial.Font = new System.Drawing.Font("Comic Sans MS", 10.25F);
@@ -93,6 +95,7 @@
             // 
             // buttonServices
             // 
+            this.buttonServices.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonServices.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
             this.buttonServices.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonServices.Font = new System.Drawing.Font("Comic Sans MS", 10.25F);
@@ -102,15 +105,17 @@
             this.buttonServices.TabIndex = 5;
             this.buttonServices.Text = "Услуги";
             this.buttonServices.UseVisualStyleBackColor = false;
+            this.buttonServices.Click += new System.EventHandler(this.buttonServices_Click);
             this.buttonServices.MouseLeave += new System.EventHandler(this.button_MouseLeave);
             this.buttonServices.MouseMove += new System.Windows.Forms.MouseEventHandler(this.button_MouseMove);
             // 
             // buttonLeave
             // 
+            this.buttonLeave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.buttonLeave.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
             this.buttonLeave.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonLeave.Font = new System.Drawing.Font("Comic Sans MS", 10.25F);
-            this.buttonLeave.Location = new System.Drawing.Point(12, 311);
+            this.buttonLeave.Location = new System.Drawing.Point(12, 310);
             this.buttonLeave.Name = "buttonLeave";
             this.buttonLeave.Size = new System.Drawing.Size(151, 44);
             this.buttonLeave.TabIndex = 5;
@@ -131,8 +136,9 @@
             // 
             // pictureBoxLogo
             // 
+            this.pictureBoxLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBoxLogo.Image = global::Laboratoria.Properties.Resources.logo;
-            this.pictureBoxLogo.Location = new System.Drawing.Point(239, 258);
+            this.pictureBoxLogo.Location = new System.Drawing.Point(239, 257);
             this.pictureBoxLogo.Name = "pictureBoxLogo";
             this.pictureBoxLogo.Size = new System.Drawing.Size(98, 97);
             this.pictureBoxLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -141,6 +147,7 @@
             // 
             // buttonReports
             // 
+            this.buttonReports.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonReports.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(118)))), ((int)(((byte)(227)))), ((int)(((byte)(131)))));
             this.buttonReports.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonReports.Font = new System.Drawing.Font("Comic Sans MS", 10.25F);
@@ -159,7 +166,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(354, 367);
+            this.ClientSize = new System.Drawing.Size(354, 366);
             this.Controls.Add(this.pictureBoxPhoto);
             this.Controls.Add(this.buttonLeave);
             this.Controls.Add(this.buttonReports);
@@ -170,6 +177,7 @@
             this.Controls.Add(this.labelHello);
             this.Controls.Add(this.pictureBoxLogo);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MinimumSize = new System.Drawing.Size(370, 405);
             this.Name = "FormMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Меню";

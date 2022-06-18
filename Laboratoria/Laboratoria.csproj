@@ -73,6 +73,12 @@
     <Compile Include="forms\FormPatients.Designer.cs">
       <DependentUpon>FormPatients.cs</DependentUpon>
     </Compile>
+    <Compile Include="forms\FormServices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormServices.Designer.cs">
+      <DependentUpon>FormServices.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -107,6 +113,7 @@
     <Compile Include="ProjectColors.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="CurrentUser.cs" />
+    <Compile Include="Utilities.cs" />
     <EmbeddedResource Include="forms\FormAuthorization.resx">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
     </EmbeddedResource>
@@ -115,6 +122,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="forms\FormPatients.resx">
       <DependentUpon>FormPatients.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormServices.resx">
+      <DependentUpon>FormServices.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

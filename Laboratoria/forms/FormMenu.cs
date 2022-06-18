@@ -49,5 +49,12 @@ namespace Laboratoria.forms
         {
 
         }
+
+        private void buttonServices_Click(object sender, EventArgs e)
+        {
+            FormServices formServices = new FormServices(this);
+            formServices.Show();
+            Hide();
+        }
     }
 }
