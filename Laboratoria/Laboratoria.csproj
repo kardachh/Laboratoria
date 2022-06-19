@@ -44,6 +44,7 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,6 +61,12 @@
     </Compile>
     <Compile Include="forms\FormAuthorization.Designer.cs">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FormChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FormChart.Designer.cs">
+      <DependentUpon>FormChart.cs</DependentUpon>
     </Compile>
     <Compile Include="forms\FormMenu.cs">
       <SubType>Form</SubType>
@@ -116,6 +123,9 @@
     <Compile Include="Utilities.cs" />
     <EmbeddedResource Include="forms\FormAuthorization.resx">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FormChart.resx">
+      <DependentUpon>FormChart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="forms\FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>
