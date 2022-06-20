@@ -132,6 +132,12 @@
     <Compile Include="UserControl.Designer.cs">
       <DependentUpon>UserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="UsercustomControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsercustomControl.Designer.cs">
+      <DependentUpon>UsercustomControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Utilities.cs" />
     <EmbeddedResource Include="forms\FormAuthorization.resx">
       <DependentUpon>FormAuthorization.cs</DependentUpon>
@@ -163,6 +169,9 @@
     </Compile>
     <EmbeddedResource Include="UserControl.resx">
       <DependentUpon>UserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsercustomControl.resx">
+      <DependentUpon>UsercustomControl.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model.edmx">
       <Generator>EntityModelCodeGenerator</Generator>

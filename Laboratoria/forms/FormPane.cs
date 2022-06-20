@@ -12,6 +12,8 @@ namespace Laboratoria.forms
 {
     public partial class FormPane : Form
     {
+
+        private static Timer aTimer;
         public FormPane()
         {
             InitializeComponent();
@@ -33,6 +35,19 @@ namespace Laboratoria.forms
             {
                 flowLayoutPanel1.Controls.Add(new UserControl());
             }
+        }
+
+        private void tick(Object myObject, EventArgs myEventArgs)
+        {
+            timer.Stop();
+            button1.Enabled = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            button1.Enabled = false;
+            timer.Start();
+            timer.Tick += new EventHandler(tick);
         }
     }
 }
