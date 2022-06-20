@@ -49,5 +49,10 @@ namespace Laboratoria.forms
             timer.Start();
             timer.Tick += new EventHandler(tick);
         }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+
+        }
     }
 }

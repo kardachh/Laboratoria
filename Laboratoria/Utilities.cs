@@ -64,15 +64,15 @@ namespace Laboratoria
 
         public static void Search(string word)
         {
-            List<service> hui = new List<service>();
+            List<service> services = new List<service>();
             foreach (service _service in Program.LaboratoriaDB.service)
             {
                 if (_service.Service.Contains(word))
                 {
-                    hui.Add(_service);
+                    services.Add(_service);
                 }
             }
-            hui.Sort();
+            services.Sort();
         }
     }
 }

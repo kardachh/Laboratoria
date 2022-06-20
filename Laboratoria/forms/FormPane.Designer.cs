@@ -55,7 +55,8 @@
             // 
             // timer
             // 
-            this.timer.Interval = 3000;
+            this.timer.Interval = 10000;
+            this.timer.Tick += new System.EventHandler(this.timer_Tick);
             // 
             // FormPane
             // 

@@ -1,13 +1,13 @@
-﻿using Laboratoria;
+﻿using ClassLibraryLaboratoria;
+using Laboratoria;
 using System;
 
 internal class Program
 {
     static void Main()
     {
-        Console.WriteLine("Hello");
-        Console.WriteLine(Utilities.Sum(10,20));
-        
+        Captcha captcha = new Captcha(5);
+        Console.WriteLine(captcha.captchaText);
         Console.ReadKey();
     }
 }
