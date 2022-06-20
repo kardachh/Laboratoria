@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Windows.Forms;
 
 namespace Laboratoria
@@ -59,6 +60,19 @@ namespace Laboratoria
         public static float Sum(float a,float b)
         {
             return a + b;
+        }
+
+        public static void Search(string word)
+        {
+            List<service> hui = new List<service>();
+            foreach (service _service in Program.LaboratoriaDB.service)
+            {
+                if (_service.Service.Contains(word))
+                {
+                    hui.Add(_service);
+                }
+            }
+            hui.Sort();
         }
     }
 }

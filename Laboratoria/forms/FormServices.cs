@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Laboratoria.forms
@@ -20,6 +21,8 @@ namespace Laboratoria.forms
                     _service.Deadline.ToString(),
                 });
                 item.Tag = _service;
+                if (_service.Price < 200)
+                    item.BackColor = Color.Gray;
                 listViewServices.Items.Add(item);
             }
             listViewServices.AutoResizeColumns(ColumnHeaderAutoResizeStyle.HeaderSize);

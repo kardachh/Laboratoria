@@ -46,7 +46,6 @@ namespace Laboratoria
                     menu.Show();
                     Hide();
                     textBoxPassword.Text = "";
-                    
                 }
             }
         }
