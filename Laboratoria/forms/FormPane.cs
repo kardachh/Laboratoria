@@ -24,9 +24,14 @@ namespace Laboratoria.forms
 
         private void FormPane_Load(object sender, EventArgs e)
         {
-            foreach (user _user in Program.LaboratoriaDB.user)
+            //foreach (user _user in Program.LaboratoriaDB.user)
+            //{
+            //    flowLayoutPanel1.Controls.Add(new UserControl(_user));
+            //}
+
+            for (int i = 0; i < 10; i++)
             {
-                flowLayoutPanel1.Controls.Add(new UserControl(_user));
+                flowLayoutPanel1.Controls.Add(new UserControl());
             }
         }
     }

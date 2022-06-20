@@ -10,5 +10,10 @@ namespace Laboratoria
             InitializeComponent();
             label1.Text = $"{_user.surname} {_user.name}";
         }
+        public UserControl()
+        {
+            InitializeComponent();
+            label1.Text = $"Имя Фамилия";
+        }
     }
 }
